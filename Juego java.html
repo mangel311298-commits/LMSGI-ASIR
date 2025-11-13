@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_</title>
+    <meta name="description" content="Ejercicio_ ">
+    <meta name="keywords" content="html">
+    <meta name="author" content="Miguel Ángel">
+    <meta name="application-name" content="Ejercicio_.html">
+    <meta name="generator" content="VSCode">
+</head>
+<body>
+    <h1>Ejercicio_</h1>
+    <br>
+    <canvas id="miCanvas" width="480" height="320" style="border:1px solid #000000;">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+    <script>
+        var canvas = document.getElementById("miCanvas");
+        var ctx = canvas.getContext("2d");
+        var bolaRadio = 10;
+        var x = canvas.width / 2;
+        var y = canvas.height - 30;
+        var dx = 2;
+        var dy = -2;
+        var barraAltura = 10;
+        var barraAncho = 75;
+        var barraX = (canvas.width - barraAncho) / 2;
+        var derechaPresionada = false;
+        var izquierdaPresionada = false;
+        document.addEventListener("keydown", keyDownHandler, false);
+        document.addEventListener("keyup", keyUpHandler, false);
+        function keyDownHandler(e) {
+            if (e.key == "Right" || e.key == "ArrowRight") {
+                derechaPresionada = true;
+            } else if (e.key == "Left" || e.key == "ArrowLeft") {
+                izquierdaPresionada = true;
+            }
+        }
+        function keyUpHandler(e) {
+            if (e.key == "Right" || e.key == "ArrowRight") {
+                derechaPresionada = false;
+            } else if (e.key == "Left" || e.key == "ArrowLeft") {
+                izquierdaPresionada = false;
+            }
+        }
+        function dibujarBola() {
+            ctx.beginPath();
+            ctx.arc(x, y, bolaRadio, 0, Math.PI * 2);
+            ctx.fillStyle = "#0095DD";
+            ctx.fill();
+            ctx.closePath();
+        }
+        function dibujarBarra() {
+            ctx.beginPath();
+            ctx.rect(barraX, canvas.height - barraAltura, barraAncho, barraAltura);
+            ctx.fillStyle = "#0095DD";
+            ctx.fill();
+            ctx.closePath();
+        }
+        function dibujar() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            dibujarBola();
+            dibujarBarra();
+            if (x + dx > canvas.width - bolaRadio || x + dx < bolaRadio) {
+                dx = -dx;
+            }
+            if (y + dy < bolaRadio) {
+                dy = -dy;
+            } else if (y + dy > canvas.height - bolaRadio) {
+                if (x > barraX && x < barraX + barraAncho) {
+                    dy = -dy;
+                } else {
+                    alert("GAME OVER");
+                    document.location.reload();
+                }
+            }
+            x += dx;
+            y += dy;
+            if (derechaPresionada && barraX < canvas.width - barraAncho) {
+                barraX += 7;
+            } else if (izquierdaPresionada && barraX > 0) {
+                barraX -= 7;
+            }
+            requestAnimationFrame(dibujar);
+        }
+        dibujar();
+    </script>
+    
+    
+</body>
+</html>
