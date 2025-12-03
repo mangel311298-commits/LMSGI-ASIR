@@ -15,18 +15,19 @@
 
 <form action="Ejercicio_38.html" method="post">
 
-    <label for="html">Sistema operativo</label><br>
+    <label for="html">Sistema operativo</label><br><br>
 
     <select id="sistema_operativo" name="sistema_operativo">
+        <option value="SO" selected disabled>SO</option>
         <option value="windows">Windows</option>
         <option value="macos">MacOS</option>
         <option value="linux">Linux</option>
         <option value="otro">Otro</option>
     </select><br><br>
 
-    <label for="sistema_operativo">Selecciona los sistemas operativos que usas:</label><br>
+    <label for="sistema_operativo">Selecciona los sistemas operativos que usas:</label><br><br>
 
-    <input type="checkbox" id="windows" name="windows" value="windows">
+    <input type="checkbox" id="windows" name="windows" value="windows" required>
     <label for="windows"> Windows</label><br>
 
     <input type="checkbox" id="macos" name="macos" value="macos">
