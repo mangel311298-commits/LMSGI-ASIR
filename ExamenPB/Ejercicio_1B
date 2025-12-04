@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_</title>
+    <meta name="description" content="Ejercicio_ ">
+    <meta name="keywords" content="html">
+    <meta name="author" content="Miguel Ángel">
+    <meta name="application-name" content="Ejercicio_.html">
+    <meta name="generator" content="VSCode">
+</head>
+
+<body>
+<h1><b>Menú</b></h1>
+
+<ul>
+    <li>Inicio</li>
+    <li>Noticias</li>
+    <li>Artículos</li>
+    <li>Contacto</li>
+</ul>
+
+<h1><b>Instrucciones</b></h1>
+
+<ol>
+    <li>Enchufar correctamente</li>
+    <li>Comprobar conexiones</li>
+    <li>Encender el aparato</li>
+</ol>
+
+<h1><b>Metalenguajes</b></h1>
+
+<dl>
+    <dt>SGML</dt>
+        <dd>Metalenguajes para la definición de otros lenguajes de marcado</dd>
+    <dt>XML</dt>
+        <dd>Lenguaje basado en SGML y que se emplea para desarrollar datos</dd>
+    <dt>RSS</dt>
+    <dt>GML</dt>
+    <dt>XHTML</dt>
+    <dt>SVG</dt>
+    <dt>XUL</dt>
+        <dd>Lenguaje desarrollado de XML para determinadas aplicaciones</dd>
+</dl>
+
+<h1><b>Menú 2</b></h1>
+
+<ul>
+    <li>Inicio</li>
+    <li>Noticias</li>
+
+        <ul><li><a href="https://www.google.com/?hl=es">Recientes</a></li></ul>
+        <ul><li><a href="https://www.google.com/?hl=es">Antiguas</a></li></ul>
+        <ul><li><a href="https://www.google.com/?hl=es">Artículos</a></li></ul>
+</ul>
+
+</body>
+
+</html>
