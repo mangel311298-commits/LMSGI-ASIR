@@ -10,44 +10,54 @@
     
     <p>Formulario de registro</p>
 
-<form action="">
-<legend>
-
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre"><br><br>
-
-    <label for="apellido">Apellido:</label>
-    <input type="text" id="apellido" name="apellido"><br><br>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-
-    <label for="password">Contraseña:</label>
-    <input type="password" id="password" name="password"><br><br>
-
-    <input type="submit" value="Registrar">
+<form action="/UD03EXAMEN_GonzalezFernandezMiguelAngel/insertar_cv.html" method="get" >
     
-</legend>
-</form>
+    <fieldset>
 
-<p>Contactanos</p>
-<form action="">
+    
+    <legend>Rellenar</legend>
 
-    <label for="nombre_contacto">Nombre:</label>
-    <input type="text" id="nombre_contacto" name="nombre_contacto"><br><br>
+    <select name="sexo" >
+        <option value="Hombre">Hombre</option>
+        <option value="Mujer">Mujer</option>
+    </select><br><br>
 
-    <label for="email_contacto">Email:</label>
-    <input type="email" id="email_contacto" name="email_contacto"><br><br>
+    <label for="Elegir color"> Elija un color</label>
+    <input type="color" name="color"><br><br>
 
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
+    <label for="fecha"> Elija una fecha</label> 
+    <input type="date" name="fecha"><br><br>
+ 
+    <input type="radio" name="lenguaje" value="lenguajejava" > Java
+    <input type="radio" name="lenguaje" value="lenguajepython" > Python
+    <input type="radio" name="lenguaje" value="lenguajeHTML" > HTML
+    <input type="radio" name="lenguaje" value="lenguajevisual_basic" > Visual Basic
+    <input type="radio" name="lenguaje" value="lenguajeCSS" > CSS <br><br>
 
-    <input type="submit" value="Enviar">
+    <input type="checkbox" name="sexo" value="sexohombre"> Hombre
+    <input type="checkbox" name="sexo" value="sexomujer"> Mujer <br><br>
 
+    <label for="fichero"> Elija un fichero</label> 
+    <input type="file" name="fichero"><br><br>
 
+    <textarea name="" id="" rows="4" cols="60" placeholder="Por favor, escriba aquí"></textarea><br><br>
 
+    <label for="Instituto"></label>Instituto
+    <input type="text" name="instituto"> <br>
 
+    <label for="Estudios elegidos"></label>Estudios elegidos
+    <input type="text" name="estudios"> <br>
 
+    <label for="Nombre"></label>Nombre
+    <input type="text" name="nombre"> <br>
+
+    <label for="Apellidos"></label>Apellidos
+    <input type="text" name="apellidos"> <br>
+
+    <label for="Email"></label>Email
+    <input type="text" name="email"> <br>
+    
+        </fieldset>
 </form>
     
 </body>
