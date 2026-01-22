@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bodegas Del Sol</title>
 </head>
-<body style="background-image: url(/ProyectoHTML/Proyecto2Ev-GonzalezFernandezMiguelAngel/assets/img/fondo_viñedo.png); background-attachment: fixed; background-size: cover;">
+<body style="background-image: url(/ProyectoHTML/Proyecto2Ev-GonzalezFernandezMiguelAngel/assets/img/gal_1.avif); background-attachment: fixed; background-size: cover;">
 
     <table style="width:100%; border-collapse:collapse;">
     <tr>
         <td style="padding:20px;"><img src="/ProyectoHTML/Proyecto2Ev-GonzalezFernandezMiguelAngel/assets/img/logo.png" alt="Logo de la bodega" weight="100" height="150"></td>
+        <td style="padding:20px;"> <a href="/ProyectoHTML/Proyecto2Ev-GonzalezFernandezMiguelAngel/Inicio.html"><b>Inicio</b></a></td>
         <td style="padding:20px;"><a href="/ProyectoHTML/Proyecto2Ev-GonzalezFernandezMiguelAngel/viñedo.html"><b>Viñedo</b></a></td>
         <td style="padding:20px;"><a href="/ProyectoHTML/Proyecto2Ev-GonzalezFernandezMiguelAngel/bodega.html"><b>Bodega</b></a></td>
         <td style="padding:20px;"><a href="/ProyectoHTML/Proyecto2Ev-GonzalezFernandezMiguelAngel/productos.html"><b>Nuestros Vinos</b></a></td>
@@ -20,20 +21,72 @@
     </table>
 
     <header>
- <h1 style="text-align: center; color: rgb(255, 255, 255); text-shadow: 2px 2px 4px #000000;">Nuestro Viñedo</h1>
+<h1 style="text-align: center; color: rgb(255, 255, 255); text-shadow: 2px 2px 4px #000000;">Nuestro Viñedo</h1>
     </header>
 
+<hr><br><br>
 
-<label for="fecha"> Elija una fecha</label>
-<input type="date" name="fecha"><br><br>
+<table style="background-color: white; width: 90%; margin: auto; border: 2px dashed black; text-align: center;">
 
-
-
-<table style="background-color: white; width: 50%; margin: auto; border: 2px dashed black; text-align: center;">
     <tr>
-        <td>Conteniuuuuuudo de la celda</td>
+        <td colspan="2">
+            <img src="/ProyectoHTML/Proyecto2Ev-GonzalezFernandezMiguelAngel/assets/img/gal_1.avif" alt="Imagen del viñedo" weight="300" height="200">
+        </td>
+        
+        <td style="text-align: justify; margin-left: 10px; margin-right: 10px;"><h3>Nuestro viñedo se extiende a lo largo de colinas soleadas, donde las vides crecen en suelos ricos y bien drenados. Cultivamos variedades de uva tradicionales que reflejan el carácter único de nuestra región. Nuestro compromiso con prácticas agrícolas sostenibles garantiza que nuestras uvas sean de la más alta calidad, capturando la esencia del terroir en cada racimo.</h3> 
+        </td>
+
     </tr>
+
+    <tr>
+
+        <td style="text-align: justify; margin-left: 10px; margin-right: 10px;"><h3>Nuestro viñedo se extiende a lo largo de colinas soleadas, donde las vides crecen en suelos ricos y bien drenados. Cultivamos variedades de uva tradicionales que reflejan el carácter único de nuestra región. Nuestro compromiso con prácticas agrícolas sostenibles garantiza que nuestras uvas sean de la más alta calidad, capturando la esencia del terroir en cada racimo.</h3> 
+        </td>
+
+        <td colspan="2">
+            <img src="/ProyectoHTML/Proyecto2Ev-GonzalezFernandezMiguelAngel/assets/img/gal_1.avif" alt="Imagen del viñedo" weight="300" height="200">
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align: justify; margin-left: 10px; margin-right: 10px;"><h3>Nuestro viñedo se extiende a lo largo de colinas soleadas, donde las vides crecen en suelos ricos y bien drenados. Cultivamos variedades de uva tradicionales que reflejan el carácter único de nuestra región. Nuestro compromiso con prácticas agrícolas sostenibles garantiza que nuestras uvas sean de la más alta calidad, capturando la esencia del terroir en cada racimo.</h3> 
+        </td>
+        <td colspan="2">
+            <img src="/ProyectoHTML/Proyecto2Ev-GonzalezFernandezMiguelAngel/assets/img/gal_1.avif" alt="Imagen del viñedo" weight="300" height="200">
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align: justify; margin-left: 10px; margin-right: 10px;"><h3>Nuestro viñedo se extiende a lo largo de colinas soleadas, donde las vides crecen en suelos ricos y bien drenados. Cultivamos variedades de uva tradicionales que reflejan el carácter único de nuestra región. Nuestro compromiso con prácticas agrícolas sostenibles garantiza que nuestras uvas sean de la más alta calidad, capturando la esencia del terroir en cada racimo.</h3> 
+        </td>
+        <td colspan="2">
+            <img src="/ProyectoHTML/Proyecto2Ev-GonzalezFernandezMiguelAngel/assets/img/gal_1.avif" alt="Imagen del viñedo" weight="300" height="200">
+        </td>
+    </tr>
+
+    <tr style="background-color: rgb(225, 248, 201); border: none;">
+        <td colspan="3" style="border-left: none;">
+            <h3>Elija una fecha para su visita:</h3>
+            <form action="ReservarVisita" method="post">
+                <input type="date" name="fecha" style="width: 100px;"><br><br>
+            <input type="button" name="ReservarVisita" id="ReservarVisita" value="Reservar Visita">
+            </form>
+        </td>
+    </tr>
+
+
 </table>
+
+
+<br><br><br>
+
+<form action="" style="position: relative;">
+    <button type="submit" formaction="/ProyectoHTML/Proyecto2Ev-GonzalezFernandezMiguelAngel/Inicio.html" style="position: absolute; right: 0  ;">
+        <b>Pagina de inicio</b>
+    </button>
+</form><br>
+
+<br>
 
 <footer>
 <table style="width:100%; border-collapse:collapse; background-color: rgb(0, 0, 0);">
